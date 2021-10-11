@@ -6,11 +6,11 @@ class School:
     Location = 'Florida'
     Phone = ''
 
-class Student:
+class Student(School):
     GPA = '3.5'
     Year = 'Senior'
 
-class Teacher:
+class Teacher(School):
     Subject = 'History'
     Email = 'Teacher.FS@school.com'
     
