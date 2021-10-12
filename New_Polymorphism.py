@@ -4,14 +4,14 @@
 class School:
     name = "Florida State University"
     location = "Florida"
-    major = "Multiple"
+    majors = "Engineering"
     category = "University"
 
     def schoolInfo(self):
         entry_name = input("Enter the schools name: ")
         entry_location = input("Enter the schools location: ")
-        entry_major = input ("Enter the schools Majors: ")
-        entry_category = input("Enter the category of school this is: ")
+        entry_major = input ("Enter the schools majors: ")
+        entry_category = input("Enter the category of school this is")
         if (entry_location == self.location and entry_major == self.major):
             print("This school is called {}".format(entry_name))
         else:
@@ -19,18 +19,18 @@ class School:
 
 #1st child class
 class Student(School):
-    gpa = 4.0
+    gpa = "4.0"
     living = "On or Off Campus"
 
     def schoolInfo(self):
         entry_name = input("Enter the schools name: ")
         entry_location = input("Enter the schools location: ")
         entry_major = input ("Enter the schools Majors: ")
-        entry_gpa = input("what is the current sudents GPA: ")
+        entry_gpa = input("Enter the students current GPA:")
         if (entry_location == self.location and entry_gpa == self.gpa):
-            print("The Students GPA is 4.0".format(entry_name))
+            print("The students gpa is above average, gpa {}".format(entry_gpa))
         else:
-            print("The students GPA is below 4.0".format(entry_gpa))
+            print("The students GPA is below average")
 
 #2nd child class
 class Teacher(School):
@@ -40,19 +40,19 @@ class Teacher(School):
     def teacherInfo(self):
         entry_name = input("Enter the schools name: ")
         entry_location = input("Enter the schools location: ")
-        entry_major = input ("Enter the schools Majors: ")
-        entry_resource = input("Your teacher is a great resource: ")
-        if (entry_location == self.location and entry_resource == self.resource):
-            print("The teachers are a viable resource for all your questions".format(entry_name))
+        entry_major = input ("Enter the schools Major: ")
+        entry_email = input("Enter the teachers email: ")
+        if (entry_location == self.location and entry_email == self.email):
+            print("The teachers major is {}".format(entry_major))
         else:
-            print("Leave an email and the teacher will get back to you")
+            print("The teachers email is not listed")
 
 if __name__ == "__main__":
     student = Student()
     print(student.schoolInfo())
 
     teacher = Teacher()
-    print(teacher.schoolInfo())
+    print(teacher.teacherInfo())
             
         
         
