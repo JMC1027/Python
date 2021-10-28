@@ -11,12 +11,12 @@ def home(request):
     return render(request, 'checkbook/index.html', content)
 
 def create_account(request):
-    form = AccountForm(data=request.Post or None)
+    form = AccountForm(data=request.POST or None)
     if request.method == 'POST':
         if form.is_valid():
             form.save()
             return redirect('index')
-        content = {'form': form}
+    content = {'form': form}
     return render(request, 'checkbook/CreateNewAccount.html', content)
 
 def balance(request, pk):
@@ -31,19 +31,21 @@ def balance(request, pk):
         else:
             current_total -= t.amount
             table_contents.update({t : current_total})
-    content = {'account':account}
+    content = {'account':account, 'table_contents': table_contents, 'balance' : current_total}
     return render(request, 'checkbook/BalanceSheet.html', content)
 
 
 
 def transaction(request):
-    form = TransactionForm(data=request.Post or None)
+    form = TransactionForm(data=request.POST or None)
     if request.method == 'POST':
         if form.is_valid():
             form.save()
-        pk = request.POST['account']
-        form.save()
-        return balance(request, pk)
+            pk = request.POST['account']
+            form.save()
+            return balance(request, pk)
+    content = {'form': form}
+    return render(request, 'checkbook/AddTransaction.html', content)
 
 
 

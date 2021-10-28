@@ -22,4 +22,4 @@ class Transaction(models.Model):
     description = models.CharField(max_length=100)
     account = models.ForeignKey(Account, on_delete=models.CASCADE)
 
-    Transaction = models.Manager()
+    Transactions = models.Manager()
