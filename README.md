@@ -1,5 +1,5 @@
 # Python_New
  
- Here are spme of my Python Projects. They utilize various moduels such as tkinter and sqlite3
+ Here are some of my Python Projects. They utilize various moduels such as tkinter and sqlite3
  
  
