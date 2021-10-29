@@ -8,4 +8,4 @@
  
  https://github.com/JMC1027/Python_New/tree/main/MyVirtualEnviorments/Django_Checkbook
  
-Inheritance.py
+GUI.py
