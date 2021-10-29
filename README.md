@@ -17,7 +17,7 @@ With this code I have created a graphical user interface which when ran transfer
 This code actually gives the graphical user interface above its functionality. It runs concurrent with the gui otherwise the interface would be just that, no functionality, no file transfer.
 
 # Django Checkbook
-With this project I have created an online banking sysytem that allows users to create accounts, deposit, and withdrawal funds inside a safe and secure framwork (Django). Whatever transaction the user decides upon the online checkbook will show the transaction type, amount, and what it is used for.  
+With this project I have created an online banking sysytem that allows users to create accounts, deposit, and withdrawal funds inside a safe and secure framework (Django). Whatever transaction the user decides upon the online checkbook will show the transaction type, amount, and what it is used for.  
 
 # Nice Mean 
 This was one of my very first Python Projects. Its a simple game where the user is given a scenario and is presented with 2 choices, to be nice or mean. The game calculates your answers and at the end will present you with the type of personality your character is giving off to the game (Nice or Mean)
