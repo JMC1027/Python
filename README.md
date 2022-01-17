@@ -3,7 +3,7 @@
  Python Projects that utilize various moduels such as tkinter and sqlite3
  
 # File Transfer GUI
-Created a graphical user interface which when ran transfers certain files from folder to folder based on modification time of each file in a particular folder. 
+A graphical user interface which when ran transfers certain files from folder to folder based on modification time of each file in a particular folder. 
 
 [File Transfer GUI](https://github.com/JMC1027/Python_New/blob/main/giu.py)
  
