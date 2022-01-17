@@ -7,7 +7,7 @@ Created a graphical user interface which when ran transfers certain files from f
 
 [File Transfer GUI](https://github.com/JMC1027/Python_New/blob/main/giu.py)
  
-# File transfer
+# File Transfer
 Gives the graphical user interface above its functionality. It runs concurrent with the GUI otherwise the interface would be just that, no functionality, no file transfer.
 
 [File Transfer](https://github.com/JMC1027/Python_New/blob/main/file_transfer.py)
